@@ -3,13 +3,21 @@
         <div class="card-body d-flex">
 <h1 class="flex-grow-1">List</h1>
 <div class="d-flex flex-shrink-0 gap-1">
-<button class="btn btn-sm btn-primary">Submit</button>
-<button class="btn btn-sm btn-primary">Submit</button>
+<button class="btn btn-sm btn-primary" (click)="changeColor()">change color</button>
+<button class="btn btn-sm btn-danger" (click)="remove()">remove color</button>
+<button class="btn btn-sm btn-success" (click)="changeName()">changeName</button>
 </div>
             </div>
         
         <div class="card-body">
-            
+<h1>I am parent</h1>
+            <app-employee>
+                <h2 #aniket>I am child</h2>
+            </app-employee>
+<hr class="text-danger">
+            <div class="mt-4">
+{{name | uppercase}}
+            </div>
         </div>
     </div>
 </div>
