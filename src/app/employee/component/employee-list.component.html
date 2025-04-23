@@ -6,6 +6,27 @@
 <button class="btn btn-sm btn-primary" [routerLink]="['/employee/create']">Add New</button>
 </div>
         </div>
-        <div class="card-body"></div>
+        <div class="card-body">
+            <div class="row">
+                <table class="table">
+                    <thead>
+<tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>Department Name</th>
+</tr>
+                    </thead>
+                    <tbody>
+<tr *ngFor="let item of allEmployee;let i=index">
+    <td>{{i+1}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.salary}}</td>
+    <td>{{item.departmentName}}</td>
+</tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
