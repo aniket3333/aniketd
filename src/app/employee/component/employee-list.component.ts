@@ -10,7 +10,7 @@ export class EmployeeListComponent implements OnInit{
     constructor(@Inject(EMP_SERVICE) private _employeeService:IEmployeeService){}
 ngOnInit(): void {
     this._departMent = [];
-    this.getDepartments();
+    // this.getDepartments();
 }
 
 getDepartments()
