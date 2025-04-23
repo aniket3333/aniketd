@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header d-flex">
+            <h5 class="flex-grow-1">Department List</h5>
+            <div class="d-flex flex-shrink-0">
+                <button type="button" class="btn btn-sm btn-primary">Add New</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of department;let i=index">
+<td>{{i+1}}</td>
+<td>{{item.name}}</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
